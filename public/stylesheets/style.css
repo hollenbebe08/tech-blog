@@ -1,19 +1,34 @@
-.wrapper {
-    background-color: chocolate;
+*{
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(39, 31, 27);
 }
 
 .header h1 {
     color: white;
+    font-size: 20pt;
 }
 
 .header nav {
-    font-size: 20px;
+    font-size: 20pt;
 }
 
 .header nav ul {
     list-style-type: none;
 }
 
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .body {
-    background-color: mediumaquamarine;
+    background-color: rgb(114, 162, 132);
 }

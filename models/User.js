@@ -13,7 +13,7 @@ class User extends Model {
 //define table columns and configuration
 User.init(
     {
-        id:  
+        id:
         {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -24,15 +24,6 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: true,
-            validate: {
-                isEmail: true
-            }
-        },
-        //define a password column
         password: {
             type: DataTypes.STRING,
             allowNull: false,

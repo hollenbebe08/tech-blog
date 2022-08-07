@@ -5,23 +5,28 @@
     <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
-    <link rel="stylesheet" href="/stylesheets.style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
-<body>
+<body class="body">
     <div class="wrapper">
-        <header>
+        <header class = "header">
             <h1>
-                <a href="/">Tech Blog</a>
+                <a href="/">Home</a>
             </h1>
+            <nav>
+                <button id="logout" class="btn-no-style">logout</button>
+                <a href="/login">Login</a>
+            </nav>
         </header>
         <main>
             {{{body}}}
         </main>
         <footer>
-            
+
         </footer>
     </div>
+    <script src="/javascript/logout.js"></script>
 </body>
 
 </html>
