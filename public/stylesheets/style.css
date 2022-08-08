@@ -4,22 +4,17 @@
 
 .header {
     background-color: rgb(39, 31, 27);
-}
-
-.header h1 {
-    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: left;
+    list-style: none;
+    padding: 30px;
     font-size: 20pt;
 }
 
 .header nav {
     font-size: 20pt;
-}
-
-.header nav ul {
-    list-style-type: none;
-}
-
-.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -27,8 +22,28 @@
 a {
     color: white;
     text-decoration: none;
+    padding: 10px;
+}
+
+.hero {
+    padding: 20px;
 }
 
 .body {
     background-color: rgb(114, 162, 132);
 }
+
+.post-list {
+    list-style: none;
+}
+
+
+.title {
+    border: 50px;
+    background-color: rgb(39, 31, 27);
+    color: white;
+    width: 50%;
+    padding: 10px; 
+}
+
+
