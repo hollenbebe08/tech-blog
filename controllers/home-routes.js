@@ -54,11 +54,11 @@ router.get('/post/:id', (req, res) => {
           id: req.params.id
         },
         attributes: [
-          'id',
-          'post_text',
-          'title',
-          'created_at',
-        ],
+            'id',
+            'post_text',
+            'title',
+            'created_at',
+            ],
         include: [
           {
             model: Comment,
@@ -82,7 +82,7 @@ router.get('/post/:id', (req, res) => {
 
         // serialize the data
         const post = dbPostData.get({ plain: true });
-
+        console.log(post);
         // pass data to template
         res.render('single-post', { 
             post,
